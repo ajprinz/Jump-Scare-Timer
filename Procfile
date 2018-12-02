@@ -1,1 +1,1 @@
-web: python jumpscaretimer.py
+web: gunicorn app:jumpscaretimer --log-file=-
