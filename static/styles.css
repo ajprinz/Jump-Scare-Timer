@@ -1,0 +1,120 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+
+* {
+    font-family: 'Lato', Arial, sans-serif;
+    letter-spacing: .8px;
+}
+
+body {
+    background: #fff;
+    transition: 1s ease;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h1 {
+    letter-spacing: 5px;
+    font-size: 120%;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    opacity: 0.5;
+}
+
+main {
+    margin-top: 125px;
+}
+
+form {
+    text-align: center;
+    transition: 1s ease;
+}
+
+input[type=submit] {
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 20px;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+#userURL {
+    font-size: 110%;
+    padding: 15px 25px;
+    width: 50%;
+    border: 2px solid #f45936;
+    border-radius: 25px;
+}
+
+#userURL:focus {
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#controls {
+    text-align: center;
+}
+
+button {
+    font-size: 3vmin;
+    background: transparent;
+    border: 1px solid #000;
+    padding: 20px 75px;
+    margin: 50px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #000;
+    color: #fff !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+#timer {
+    text-align: center;
+    color: #000;
+}
+
+#timer input {
+    color: inherit;
+    font-size: 20vmin;
+    width: 25vmin;
+    background: transparent;
+    border: none;
+    vertical-align: top;
+    transition: 1s ease;
+}
+
+.semicolon {
+    color: inherit;
+    font-size: 20vmin;
+    display: inline-block;
+    margin-top: -2vmin;
+    padding-right: 2vmin;
+    transition: 1s ease;
+}
