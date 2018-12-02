@@ -1,1 +1,1 @@
-web: gunicorn app:jumpscaretimer --log-file=-
+web: gunicorn github:jumpscaretimer --log-file=-
