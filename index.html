@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jump Scare Timer</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Outpost20</h1>
+            </header>
+            <main>
+                <h2>Jump Scare Timer</h2>
+                <p>*Currently only supports links from <a href="https://wheresthejump.com/">wheresthejump.com</a></p>
+                <form action="" method="POST">
+                    <input type="text" name="userURL" id="userURL" placeholder="Paste URL Here">
+                    <input type="submit" value="Submit">
+                </form>
+
+                <h2>{{title}}</h2>
+
+                <div id="timer">
+                    <input type="number" name="hours" id="hours" min="0" max="59" value=00><span class="semicolon">:</span>
+                    <input type="number" name="minutes" id="minutes" min="0" max="59" value=00><span class="semicolon">:</span>
+                    <input type="number" name="seconds" id="seconds" min="0" max="59" value=00>
+                </div>
+
+                <div id="controls">
+                    <button onclick="start()">Start</button>
+                    <button onclick="stop()">Stop</button>
+                </div>
+
+                <script>var times = {{ times|tojson }}</script>
+                <script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+            </main>
+        </div>
+    </body>
+</html>
