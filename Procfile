@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT jumpscaretimer:app
+web: gunicorn -b :8000 jumpscaretimer:app
