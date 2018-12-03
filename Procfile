@@ -1,1 +1,1 @@
-web: python jumpscaretimer.py
+web: gunicorn jumpscaretimer.py
