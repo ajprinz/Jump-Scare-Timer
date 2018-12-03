@@ -1,1 +1,2 @@
-web: gunicorn -b :8000 jumpscaretimer:app
+web: gunicorn jumpscaretimer:app
+heroku ps:scale web=1
