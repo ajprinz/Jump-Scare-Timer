@@ -83,7 +83,7 @@ function start() {
 
 function stop() {
 
-    body.style.background = '#9affd6';
+    body.style.background = '#fff';
     form.style.display = 'block';
     timer.style.color = '#000';
     btn[0].style.color = '#000';
